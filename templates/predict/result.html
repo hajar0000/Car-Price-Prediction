@@ -1,0 +1,9 @@
+{% if predicted_price %}
+<div class="alert alert-success">
+    <h2 class="text-success">Prix prédit : {{ predicted_price|floatformat:2 }} </h2>
+</div>
+{% else %}
+<div class="alert alert-info">
+    <h4>Veuillez remplir les informations pour prédire le prix.</h4>
+</div>
+{% endif %}
